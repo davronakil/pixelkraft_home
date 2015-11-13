@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+    http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    
+    <url>
+        <loc>http://pixelkraft.net/</loc>
+        <lastmod>2014-11-03T23:33:55+00:00</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    
+    
+    <url>
+        <loc>http://pixelkraft.net/#work</loc>
+        <lastmod>2014-11-03T23:33:55+00:00</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    
+    <url>
+        <loc>http://pixelkraft.net/#services</loc>
+        <lastmod>2014-11-03T23:33:55+00:00</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    
+    <url>
+        <loc>http://pixelkraft.net/#about</loc>
+        <lastmod>2014-11-03T23:33:55+00:00</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    
+    <url>
+        <loc>http://pixelkraft.net/#contact</loc>
+        <lastmod>2014-11-03T23:33:55+00:00</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    
+    
+    
+    
+</urlset>
