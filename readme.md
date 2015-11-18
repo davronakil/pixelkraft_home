@@ -1,1 +1,1 @@
-PixelKraft.net repository
+[PixelKraft.net](http://www.PixelKraft.net/) repository
