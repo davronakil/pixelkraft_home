@@ -76,8 +76,6 @@
 <script src="_include/js/modernizr.js"></script>
 
 </head>
-
-
 <body>
 <!-- Js -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
@@ -91,6 +89,10 @@
 <script src="_include/js/jquery.tweet.js"></script> <!-- Tweet -->
 <script src="_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
 <script src="_include/js/main.js"></script> <!-- Default JS -->
+
+<script type="text/javascript" src="//cdn.embed.ly/player-0.0.9.min.js"></script>
+<script type="text/javascript" src="//cdn.embed.ly/jquery.embedly.scrollplay-0.0.1.min.js"></script>
+
 <!-- End Js -->
 
 
@@ -113,15 +115,8 @@
 </a>
 </center> </div>
 
-    <!-- div class="control-nav">
-        <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
-        <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
-        <ul id="slide-list"></ul>
-        
-        <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
-    </div -->
 </div>
- <!-- End Homepage Slider -->
+
 
 <!-- Header -->
 <header>
@@ -139,7 +134,6 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact Us</a></li>
                 <li><a href="./get_quote.php" class="external" target="_blank">Get Started</a></li>
-                <!-- li><a href="shortcodes.html" class="external">Shortcodes</a></li -->
             </ul>
         </nav>
         
@@ -168,7 +162,25 @@
                             </div>  
                             <!-- Start Video -->
                             <div class="span5">
-                               <div class='embed-container'><iframe src='https://www.youtube.com/embed/n-CC1W_9PCk' frameborder='0' allowfullscreen></iframe></div>
+                                <div id="videoHolder">
+                                    <video width="100%" height="100%" id="promo" preload="auto" controls>
+                                      <source src="pixelkraft-promo.webm" type="video/webm"/>
+                                      <source src="pixelkraft-promo.mp4" type="video/mp4"/>
+                                    </video>
+                                </div>
+<script type="text/javascript">
+var visible = 
+    $(window).scroll(function(){
+    $e = $('#promo');
+    var visible = 
+        $(window).scrollTop()+window.innerHeight>$e.offset().top
+        &&$(window).scrollTop()<$e.offset().top+$e.height();
+    $('#ans').html(visible ? "the thing is visible" : "the thing isn't visible");
+    console.log("test2");
+});
+
+
+</script>
                             </div>  
                             <!-- End Video -->
                         </div>
@@ -731,7 +743,7 @@
                 </ul>
 
                 <!-- Preload arrow hover image -->
-				<img src="/img/slider_down_over.png" width="1" height="1" style="width:1px;height:1px;opacity:0.1;"> 
+				<img src="_include/img/slider_down_over.png" width="1" height="1" style="width:1px;height:1px;opacity:0.1;"> 
 
             </div>
         </div>
@@ -764,6 +776,8 @@
     return false;
 });
 </script>
+<!-- End smooth scroll -->
+
 
 <!-- Analytics -->
 <script>
