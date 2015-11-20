@@ -445,6 +445,7 @@ $(document).ready(function(){
 	BRUSHED.accordion();
 	BRUSHED.toggle();
 	BRUSHED.toolTip();
+	
 });
 
 $(window).resize(function(){
