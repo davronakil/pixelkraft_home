@@ -66,17 +66,17 @@
 <link rel="shortcut icon" href="favicon.ico">
 <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
-
 <link rel="apple-touch-icon" href="#">
 <link rel="apple-touch-icon" sizes="114x114" href="#">
 <link rel="apple-touch-icon" sizes="72x72" href="#">
 <link rel="apple-touch-icon" sizes="144x144" href="#">
 
+<!-- Fontawesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 <!-- Modernizr -->
 <script src="_include/js/modernizr.js"></script>
 
-</head>
-<body>
 <!-- Js -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
 <script src="_include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
@@ -89,13 +89,12 @@
 <script src="_include/js/jquery.tweet.js"></script> <!-- Tweet -->
 <script src="_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
 <script src="_include/js/main.js"></script> <!-- Default JS -->
-
 <script type="text/javascript" src="//cdn.embed.ly/player-0.0.9.min.js"></script>
 <script type="text/javascript" src="//cdn.embed.ly/jquery.embedly.scrollplay-0.0.1.min.js"></script>
-
 <!-- End Js -->
 
-
+</head>
+<body>
 <!-- This section is for Splash Screen -->
 <div class="ole">
 <section id="jSplash">
@@ -110,12 +109,12 @@
 
 <a id="trigger" class="trigger" href="#intro">
     <div class="slider_down">
-        
     </div>
 </a>
-</center> </div>
-
+</center> 
 </div>
+</div>
+
 
 
 <!-- Header -->
@@ -163,24 +162,11 @@
                             <!-- Start Video -->
                             <div class="span5">
                                 <div id="videoHolder">
-                                    <video width="100%" height="100%" id="promo" preload="auto" controls>
+                                    <video width="100%" height="100%" id="promo" preload="auto" controls autoplay muted>
                                       <source src="pixelkraft-promo.webm" type="video/webm"/>
                                       <source src="pixelkraft-promo.mp4" type="video/mp4"/>
                                     </video>
                                 </div>
-<script type="text/javascript">
-var visible = 
-    $(window).scroll(function(){
-    $e = $('#promo');
-    var visible = 
-        $(window).scrollTop()+window.innerHeight>$e.offset().top
-        &&$(window).scrollTop()<$e.offset().top+$e.height();
-    $('#ans').html(visible ? "the thing is visible" : "the thing isn't visible");
-    console.log("test2");
-});
-
-
-</script>
                             </div>  
                             <!-- End Video -->
                         </div>
@@ -736,8 +722,7 @@ var visible =
                     <li>New York, 11106</li>
                     <li></li>
 					<li style="display:inline-block">
-						<iframe width="100%" height="100%" frameborder="0" style="border:0;width:100%;height:192px;" src="https://www.google.com/maps/embed/v1/view?zoom=10&center=40.7128%2C-74.0059&key=AIzaSyDxX9Jz76UNht65aiA33QYPu_ZEfSS8R3E" allowfullscreen></iframe>
-
+                        <iframe width="100%" height="100%" frameborder="0" style="border:0;width:100%;height:192px;" src="https://www.google.com/maps/embed/v1/view?zoom=10&center=40.7128%2C-74.0059&key=AIzaSyDxX9Jz76UNht65aiA33QYPu_ZEfSS8R3E" allowfullscreen></iframe>
 					</li>
                     
                 </ul>
@@ -777,6 +762,22 @@ var visible =
 });
 </script>
 <!-- End smooth scroll down -->
+
+<!-- Mute/Unmute when clicked on Video (Imitating Facebook's interface) -->
+<script type="text/javascript">
+$(document).ready(function() {
+    
+    $("#promo").click( function (){
+        $(this).prop('muted', !$(this).prop('muted'));
+    });
+    $("#volume").click( function (){
+        $("#promo").prop('muted', !$(this).prop('muted'));
+        alert('hello');
+    });
+
+});
+</script>
+<!-- End mute unmute on video click -->
 
 
 <!-- Analytics -->
