@@ -1421,7 +1421,6 @@ DAV
 
 }
 
-
 .slider_down {
 	width: 80px;
 	height: 80px;
@@ -1444,4 +1443,8 @@ DAV
 video {
   width: 100%    !important;
   height: auto   !important;
+}
+
+.info-text p {
+	line-height: 2.3em;
 }
