@@ -18,13 +18,9 @@
 
 <body>
 
-
-
-
-            <div class="GoogleForm">
-
-<iframe src="https://docs.google.com/forms/d/1aGBNORJ2oRsVwjblzfqPkiUrL0gUtcIZtE1pSlqWVcg/viewform" width="760" height="2200" frameborder="0" marginheight="0" marginwidth="5">Loading...</iframe>
-            </div>
+<div class="GoogleForm">
+	<iframe src="https://docs.google.com/forms/d/1aGBNORJ2oRsVwjblzfqPkiUrL0gUtcIZtE1pSlqWVcg/viewform" width="760" height="2200" frameborder="0" marginheight="0" marginwidth="5">Loading...</iframe>
+</div>
 
 
 </body>
