@@ -1,5 +1,8 @@
 DirectoryIndex index.html
 
+ErrorDocument 404 /404.html
+ErrorDocument 403 /403.html
+
 #BLOCK REFERRAL SPAM
 RewriteEngine on
 RewriteCond %{HTTP_REFERER} ^https?:\/\/([^.]+\.)*semalt\.com [NC,OR]
