@@ -105,13 +105,11 @@
 
 <!-- Homepage Slider -->
 <div id="home-slider">  
-<div class="main-arrow"><center>   
-
-<a id="trigger" class="trigger" href="#intro">
-    <div class="slider_down">
-    </div>
-</a>
-</center> 
+<div class="main-arrow">
+    <a id="trigger" class="trigger" href="#intro">
+        <div class="slider_down">
+        </div>
+    </a>
 </div>
 </div>
 
@@ -161,11 +159,18 @@
                             </div>  
                             <!-- Start Video -->
                             <div class="span5">
-                                <div id="videoHolder">
+                                <div id="videoHolder" itemscope itemtype="http://schema.org/VideoObject">
                                     <video width="100%" height="100%" id="promo" preload="auto" controls autoplay muted>
                                       <source src="pixelkraft-promo.webm" type="video/webm"/>
                                       <source src="pixelkraft-promo.mp4" type="video/mp4"/>
                                     </video>
+                                    <meta itemprop="name" content="Why You Need a Responsive Website for Your Business" />
+                                    <meta itemprop="Description" content="Reasons why you need your website to be responsive and mobile-friendly in this day and age." />
+                                    <meta itemprop="duration" content="T1M28S" />
+                                    <meta itemprop="thumbnail" content="/responsive-video-thumb.jpg" />
+                                    <meta itemprop="thumbnailUrl" content="http://pixelkraft.net/responsive-video-thumb.jpg" />
+                                    <meta itemprop="uploadDate" content="2015-07-05T08:00:00+08:00" />
+                                    <meta itemprop="director" content="PixelKraft LLC" />
                                 </div>
                             </div>  
                             <!-- End Video -->
@@ -458,48 +463,54 @@
         <div class="row">
         
             <div class="span6">
-                <h3 class="spec">Design</h3>
+                <h3 class="spec" itemprop="serviceType">Design</h3>
                 
                 <!-- Start Accordion -->
                 <div class="accordion" id="accordionArea">
-                    <div class="accordion-group">
+                    <div class="accordion-group" itemscope itemtype="http://schema.org/Service">
                         <div class="accordion-heading accordionize">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea" href="#oneArea">
                                 Web Design &amp; Development
+                                <meta itemprop="serviceType" content="Web Design and Development" />
+                                <meta itemprop="provider" content="PixelKraft LLC">
                                 <span class="font-icon-arrow-simple-down"></span>
                             </a>
                         </div>
                         <div id="oneArea" class="accordion-body collapse">
-                            <div class="accordion-inner">
+                            <div class="accordion-inner" itemprop="description">
                                 We make websites that stand out, on any platform or device. Using the latest tools and technologies we'll implement whatever functionality you may need and give your brand a proper home page. Just tell us what you need and the rest is on us.
                             </div>
                         </div>
                     </div>
                     
-                    <div class="accordion-group">
+                    <div class="accordion-group" itemscope itemtype="http://schema.org/Service">
                         <div class="accordion-heading accordionize">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea" href="#twoArea">
                             Graphic Design [2D &amp; 3D]
+                            <meta itemprop="serviceType" content="Graphic Design (2D and 3D)" />
+                            <meta itemprop="provider" content="PixelKraft LLC">
                             <span class="font-icon-arrow-simple-down"></span>
                         </a>
                         </div>
                         <div id="twoArea" class="accordion-body collapse">
-                            <div class="accordion-inner">
+                            <div class="accordion-inner" itemprop="description">
                                 We design beautiful Logos, Banners, Posters, Flyers, Business Cards, and just about anything that can be displayed on a monitor or printed on paper. 
                             </div>
                         </div>
                     </div>
                     
 
-                    <div class="accordion-group">
+                    <div class="accordion-group" itemscope itemtype="http://schema.org/Service">
                         <div class="accordion-heading accordionize">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea" href="#threeArea">
                             Animation
+                            <meta itemprop="serviceType" content="Animation" />
+                            <meta itemprop="provider" content="PixelKraft LLC">
                             <span class="font-icon-arrow-simple-down"></span>
                         </a>
                         </div>
                         <div id="threeArea" class="accordion-body collapse">
-                            <div class="accordion-inner">
+                            <div class="accordion-inner" itemprop="description">
                                 We can make any kind of animations including HTML5 animations, Flash animations, Animated Videos in 2D or 3D. Check out our portfolio for some of the work we've done.
                             </div>
                         </div>
@@ -514,44 +525,50 @@
                 
                   <!-- Start Accordion -->
                 <div class="accordion" id="accordionArea">
-                    <div class="accordion-group">
+                    <div class="accordion-group" itemscope itemtype="http://schema.org/Service">
                         <div class="accordion-heading accordionize">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea" href="#fourArea">
                                 Commercials &amp; Promotional Videos
+                                <meta itemprop="serviceType" content="Commercials and Promotional Videos" />
+                                <meta itemprop="provider" content="PixelKraft LLC">
                                 <span class="font-icon-arrow-simple-down"></span>
                             </a>
                         </div>
                         <div id="fourArea" class="accordion-body collapse">
-                            <div class="accordion-inner">
+                            <div class="accordion-inner" itemprop="description">
                                 Need to make a commercial, a promotional video, or a demo? We can handle anything video-related. Take a look at some of our work and talk to us to discuss your options.   
                             </div>
                         </div>
                     </div>
                     
-                    <div class="accordion-group">
+                    <div class="accordion-group" itemscope itemtype="http://schema.org/Service">
                         <div class="accordion-heading accordionize">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea" href="#fiveArea">
                             Music Videos &amp; Movies
+                            <meta itemprop="serviceType" content="Music Videos and Movies" />
+                            <meta itemprop="provider" content="PixelKraft LLC">
                             <span class="font-icon-arrow-simple-down"></span>
                         </a>
                         </div>
                         <div id="fiveArea" class="accordion-body collapse">
-                            <div class="accordion-inner">
+                            <div class="accordion-inner" itemprop="description">
                                 If you want to shoot a Music Video or a Movie, we got you covered. Our team includes an outstanding producer who can meet any and all of your needs.
                             </div>
                         </div>
                     </div>
                     
 
-                    <div class="accordion-group">
+                    <div class="accordion-group" itemscope itemtype="http://schema.org/Service">
                         <div class="accordion-heading accordionize">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea" href="#sixArea">
                             Computer-Aided Design (CAD)
+                            <meta itemprop="serviceType" content="Computer-Aided Design (CAD)" />
+                            <meta itemprop="provider" content="PixelKraft LLC">
                             <span class="font-icon-arrow-simple-down"></span>
                         </a>
                         </div>
                         <div id="sixArea" class="accordion-body collapse">
-                            <div class="accordion-inner">
+                            <div class="accordion-inner" itemprop="description">
                                 Need to design a 3D object? Be it your next invention or a logo you want to print on a 3D Printer, our experienced team will work with you to put together a beautiful prototype of just about anything you have in mind. 
                             </div>
                         </div>
@@ -579,29 +596,33 @@
                 
                 <!-- Start Accordion -->
                 <div class="accordion" id="accordionArea">
-                    <div class="accordion-group">
+                    <div class="accordion-group" itemscope itemtype="http://schema.org/Service">
                         <div class="accordion-heading accordionize">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea" href="#cms">
                                 Content Management Systems (CMS)
+                                <meta itemprop="serviceType" content="Content Management Systems (CMS)" />
+                                <meta itemprop="provider" content="PixelKraft LLC">
                                 <span class="font-icon-arrow-simple-down"></span>
                             </a>
                         </div>
                         <div id="cms" class="accordion-body collapse">
-                            <div class="accordion-inner">
+                            <div class="accordion-inner" itemprop="description">
                                 We build powerful and secure content management systems that enable you to easily manage your website through a web-based control panel. We also support existing systems such as WordPress, Joomla, Magento, Shopify, and others.
                             </div>
                         </div>
                     </div>
                     
-                    <div class="accordion-group">
+                    <div class="accordion-group" itemscope itemtype="http://schema.org/Service">
                         <div class="accordion-heading accordionize">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea" href="#plugins">
                             Plugins and Addons
+                            <meta itemprop="serviceType" content="Plugins and Addons" />
+                            <meta itemprop="provider" content="PixelKraft LLC">
                             <span class="font-icon-arrow-simple-down"></span>
                         </a>
                         </div>
                         <div id="plugins" class="accordion-body collapse">
-                            <div class="accordion-inner">
+                            <div class="accordion-inner" itemprop="description">
                                 We can develop plugins and addons for existing Content Management Systems (i.e. WordPress, Joomla), or find and implement the right solution for your existing project.
                             </div>
                         </div>
@@ -620,30 +641,34 @@
                   <!-- Start Accordion -->
                 <div class="accordion" id="accordionArea">
                     
-                    <div class="accordion-group">
+                    <div class="accordion-group" itemscope itemtype="http://schema.org/Service">
                         <div class="accordion-heading accordionize">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#Technology Consulting" href="#technology">
-                                Technology
+                                Technology Consulting
+                                <meta itemprop="serviceType" content="Technology Consulting" />
+                                <meta itemprop="provider" content="PixelKraft LLC">
                                 <span class="font-icon-arrow-simple-down"></span>
                             </a>
                         </div>
                         <div id="technology" class="accordion-body collapse">
-                            <div class="accordion-inner">
+                            <div class="accordion-inner" itemprop="description">
                                 From using technology to run your business faster and more efficiently, to making your life easier and less painful, we'll take care of any and all of your technology needs. Let us show you your full potential. We specialize in all kinds of tech, including revolutionary blockchain technology and smart contracts. Contact us today.
                             </div>
                         </div>
                     </div>
 
 
-                    <div class="accordion-group">
+                    <div class="accordion-group" itemscope itemtype="http://schema.org/Service">
                         <div class="accordion-heading accordionize">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea" href="#bitcoin">
-                                Blockchain &amp; Cryptocurrencies
+                                Blockchain Technology &amp; Cryptocurrencies
+                                <meta itemprop="serviceType" content="Blockchain Technology and Cryptocurrencies e.g. Bitcoin, Ethereum" />
+                                <meta itemprop="provider" content="PixelKraft LLC">
                                 <span class="font-icon-arrow-simple-down"></span>
                             </a>
                         </div>
                         <div id="bitcoin" class="accordion-body collapse">
-                            <div class="accordion-inner">
+                            <div class="accordion-inner" itemprop="description">
                                 We have in-depth knowledge of the Blockchain technology and everything that has to do with cryptocurrencies i.e. Bitcoin, Ethereum, etc. The blockchain is a revolutionary technology with massive potential and huge implications for every business out there. Does your business accept Bitcoin yet? Would you like to utilize Smart Contracts? Invest in cryptocurrency or Ethereum? We do Blockchain consultation and can assist you with anything ranging from educating you and your employees to helping your business utilize the blockchain to automate, decentralize, and grow along with the advancements in technology. We can help your business start accepting bitcoin and can implement payment solutions that will open up a whole new world of customers and supporters for your business or project. Contact us today to learn more.
                             </div>
                         </div>
